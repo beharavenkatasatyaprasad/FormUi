@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEXONIQ</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="message"></div>
+    <nav class="navbar shadow navbar-expand-md justify-content-center p-0 m-0">
+        <a class="navbar-brand m-0" href="index.html"><img src="stack/logo.jpeg" height="40" alt=""></a>
+    </nav>
+    <div class="container bg-light shadow card " style="margin-top: 1.5rem;">
+        <div class="formHeader">
+            <h3>Bava Form</h3>
+        </div>
+        <div class="formDescription text-justify">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, omnis officiis atque iure autem
+                obcaecati dolor? Obcaecati deserunt fugit consectetur, esse sunt autem necessitatibus eaque tenetur
+                voluptas cumque itaque nemo!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis placeat dicta eligendi similique
+                repellat doloremque deserunt in harum possimus tenetur quo fugiat voluptatum ducimus mollitia maxime
+                fugit, quam labore omnis.
+            </p>
+        </div>
+        <hr style="
+        height: 1.5px;
+        border-width: 0;
+        color: gray;
+        background-color: gray;
+        padding: 0px;
+        margin: 0px;
+      " />
+        <form id="Form" autocomplete="off">
+            <div class="text-right small" style="opacity: 0.8">
+                Fields marked with <span class="aterisk">*</span> are mandatory.
+            </div>
+            <div class="p-1">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <label for="name">Name<span class="aterisk">*</span></label>
+                        <input type="text" class="form-control" name="name" id="name" />
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <label for="email">Email<span class="aterisk">*</span></label>
+                        <input type="email" class="form-control" name="email" id="email" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <label for="profession">Profession<span class="aterisk">*</span></label>
+                        <input type="text" class="form-control" name="profession" id="profession"/>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <label for="age">Age<span class="aterisk">*</span></label>
+                        <input type="text" class="form-control" name="age" id="age"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <label for="apps">Social Media Apps frequently used<span class="aterisk">*</span></label>
+                        <select class="custom-select" multiple id="apps" name="apps">
+                            <option value="">You can select multiple apps</option>
+                            <option value="Whatsapp">Whatsapp</option>
+                            <option value="facebook">facebook</option>
+                            <option value="Telegram">Telegram</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="YouTube">YouTube</option>
+                            <option value="Pinterest">Pinterest</option>
+                            <option value="Tumblr">Tumblr</option>
+                            <option value="Snapchat">Snapchat</option>
+                            <option value="Signal">Signal</option>
+                            <option value="WeChat">WeChat</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <label for="prosCons">Pros and Cons bla bla<span class="aterisk">*</span></label>
+                        <textarea type="text"
+                            placeholder="include hyphen (-) between each point."
+                            class="form-control" rows="4.5" name="prosCons" id="prosCons"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="memeScale">How often do you follow memes?</label>
+                    <input type="range" class="form-control-range" id="memeScale">
+                </div>
+                <button type="button" id="submitBtn" onclick="submitForm()" class="btn m-0 submit-btn btn-block">
+                    Submit
+                </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
