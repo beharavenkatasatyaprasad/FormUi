@@ -41,8 +41,8 @@ async function SaveResponse(payload) {
             'Content-Type': 'application/json'
         }
     });
-    // const res = await datares.json();
-    if (res.status !== 201) {
+
+    if (datares.status !== 201) {
         custom_alert("warning", "something went wrong!!!");
         loginbtn.innerHTML = 'Try Again'
     } else {
