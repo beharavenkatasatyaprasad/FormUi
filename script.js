@@ -35,7 +35,6 @@ submitForm = ()=> {
 async function SaveResponse(payload) {
     const datares = await fetch('https://hexoniq.herokuapp.com/response', {
         method: 'POST',
-        // credentials: "include",
         body: JSON.stringify(payload),
         headers: {
             'Content-Type': 'application/json'
