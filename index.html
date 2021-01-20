@@ -16,103 +16,109 @@
     <nav class="navbar shadow navbar-expand-md justify-content-center p-0 m-0">
         <a class="navbar-brand m-0" href="index.html"><img src="stack/logo.jpeg" height="40" alt=""></a>
     </nav>
-    <div class="container bg-light shadow card " style="margin-top: 1.5rem;">
-        <div class="formHeader">
-            <h2 class="text-center">Research Form</h2>
-        </div>
-        <div class="formDescription text-justify">
-            <p class="my-0">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, omnis officiis atque iure autem
-                obcaecati dolor? Obcaecati deserunt fugit consectetur, esse sunt autem necessitatibus eaque tenetur
-                voluptas cumque itaque nemo!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis placeat dicta eligendi similique
-                repellat doloremque deserunt in harum possimus tenetur quo fugiat voluptatum ducimus mollitia maxime
-                fugit, quam labore omnis.
-            </p>
-        </div>
-        <hr style="
-        height: 1.5px;
-        border-width: 0;
-        color: gray;
-        background-color: gray;
-        padding: 0px;
-        margin: 0px;
-      " />
-        <form id="Form" autocomplete="off">
-            <div class="text-right small" style="opacity: 0.8">
-                Fields marked with <span class="aterisk">*</span> are mandatory.
+    <div class="container-fluid">
+
+        <div class="container bg-light shadow card " style="margin-top: 1rem;">
+            <div class="formHeader">
+                <h2 class="text-center">Research Form</h2>
             </div>
-            <div class="p-1">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <label for="name">Name<span class="aterisk">*</span></label>
-                        <input type="text" class="form-control" name="name" id="name" />
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <label for="email">Email<span class="aterisk">*</span></label>
-                        <input type="email" class="form-control" name="email" id="email" />
-                    </div>
+            <div class="formDescription text-justify">
+                <p class="my-0">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, omnis officiis atque iure autem
+                    obcaecati dolor? Obcaecati deserunt fugit consectetur, esse sunt autem necessitatibus eaque tenetur
+                    voluptas cumque itaque nemo!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis placeat dicta eligendi similique
+                    repellat doloremque deserunt in harum possimus tenetur quo fugiat voluptatum ducimus mollitia maxime
+                    fugit, quam labore omnis.
+                </p>
+            </div>
+            <hr style="
+            height: 1.5px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            padding: 0px;
+            margin: 0px;
+          " />
+            <form id="Form" autocomplete="off">
+                <div class="text-right" style="opacity: 0.8; font-size: x-small; color: rgb(27, 88, 145); letter-spacing: 1px;">
+                    Fields marked with <span class="aterisk">*</span> are mandatory.
                 </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <label for="profession">Profession<span class="aterisk">*</span></label>
-                        <input type="text" class="form-control" name="profession" id="profession"/>
+                <div class="p-1">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <label for="name">Name<span class="aterisk">*</span></label>
+                            <input type="text" class="form-control" name="name" id="name" />
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <label for="email">Email<span class="aterisk">*</span></label>
+                            <input type="email" class="form-control" name="email" id="email" />
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <label for="age">Age<span class="aterisk">*</span></label>
-                        <input type="text" class="form-control" name="age" id="age"/>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <label for="profession">Profession<span class="aterisk">*</span></label>
+                            <input type="text" class="form-control" name="profession" id="profession"/>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <label for="age">Age<span class="aterisk">*</span></label>
+                            <input type="text" class="form-control" name="age" id="age"/>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <label for="apps">Social Media Apps frequently used<span class="aterisk">*</span></label>
-                        <select class="custom-select" multiple id="apps" name="apps">
-                            <option value="">You can select multiple apps</option>
-                            <option value="Whatsapp">Whatsapp</option>
-                            <option value="facebook">facebook</option>
-                            <option value="Telegram">Telegram</option>
-                            <option value="Instagram">Instagram</option>
-                            <option value="Twitter">Twitter</option>
-                            <option value="LinkedIn">LinkedIn</option>
-                            <option value="YouTube">YouTube</option>
-                            <option value="Pinterest">Pinterest</option>
-                            <option value="Tumblr">Tumblr</option>
-                            <option value="Snapchat">Snapchat</option>
-                            <option value="Signal">Signal</option>
-                            <option value="WeChat">WeChat</option>
-                        </select>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <label for="apps">Social Media Apps frequently used<span class="aterisk">*</span></label>
+                            <select class="custom-select" multiple id="apps" name="apps">
+                                <option value="">You can select multiple apps</option>
+                                <option value="Whatsapp">Whatsapp</option>
+                                <option value="facebook">facebook</option>
+                                <option value="Telegram">Telegram</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="LinkedIn">LinkedIn</option>
+                                <option value="YouTube">YouTube</option>
+                                <option value="Pinterest">Pinterest</option>
+                                <option value="Tumblr">Tumblr</option>
+                                <option value="Snapchat">Snapchat</option>
+                                <option value="Signal">Signal</option>
+                                <option value="WeChat">WeChat</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <label for="prosCons">Pros and Cons bla bla<span class="aterisk">*</span></label>
+                            <textarea type="text"
+                                placeholder="include hyphen (-) between each point."
+                                class="form-control" rows="4.5" name="prosCons" id="prosCons"></textarea>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <label for="prosCons">Pros and Cons bla bla<span class="aterisk">*</span></label>
-                        <textarea type="text"
-                            placeholder="include hyphen (-) between each point."
-                            class="form-control" rows="4.5" name="prosCons" id="prosCons"></textarea>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <span class="float-right px-1" id="memeScaleValue"></span>
+                            <label for="memeScale">How often do you follow memes?<span class="aterisk">*</span></label>
+                            <input type="range" class="form-control-range" id="memeScale" value="0" onchange="displayMemescale(this.value)">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                            <label for="socialScale">Average time You spend on Social media per Day?<span class="aterisk">*</span></label>
+                            <select class="custom-select" id="socialScale" name="socialScale">
+                                <option value="">--Please Select--</option>
+                                <option value="Less than 1 Hour">Less than 1 Hour</option>
+                                <option value="1hour to 2 Hours">1hour to 2 Hours</option>
+                                <option value="2hours to 5 Hours">2hours to 5 Hours</option>
+                                <option value="More than 5 Hours">More than 5 Hours</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <span class="float-right px-1" id="memeScaleValue"></span>
-                        <label for="memeScale">How often do you follow memes?<span class="aterisk">*</span></label>
-                        <input type="range" class="form-control-range" id="memeScale" value="0" onchange="displayMemescale(this.value)">
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                        <label for="socialScale">Average time You spend on Social media per Day?<span class="aterisk">*</span></label>
-                        <select class="custom-select" id="socialScale" name="socialScale">
-                            <option value="">--Please Select--</option>
-                            <option value="Less than 1 Hour">Less than 1 Hour</option>
-                            <option value="1hour to 2 Hours">1hour to 2 Hours</option>
-                            <option value="2hours to 5 Hours">2hours to 5 Hours</option>
-                            <option value="More than 5 Hours">More than 5 Hours</option>
-                        </select>
-                    </div>
-                </div>
-                <button type="button" id="submitBtn" onclick="submitForm()" class="btn m-0 submit-btn btn-block">
-                    Submit
-                </button>
-        </form>
+                    <button type="button" id="submitBtn" onclick="submitForm()" class="btn m-0 submit-btn btn-block">
+                        Submit
+                    </button>
+            </form>
+        </div>
     </div>
+    <div id="particles-js" height="100"></div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
+    <script src="particlejs/particles.min.js"></script>
+    <script type="text/javascript" src="particlejs/particles.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
