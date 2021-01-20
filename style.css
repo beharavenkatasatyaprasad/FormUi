@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Lato");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -58,8 +59,12 @@ body {
   padding: 76.8px 0%;
 }
 
-.researchform label{
-  color: #3A6073;
+.form-group label{
+  color: hsl(200, 33%, 34%);
+  color: rgb(58, 96, 115);
+  /* font-size: 90% !important; */
+  font-weight:580;
+  font-family: "Lato";
   margin-bottom: .1px;
 }
 
