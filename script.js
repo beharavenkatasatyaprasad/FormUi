@@ -8,6 +8,7 @@ submitForm = ()=> {
     const memeScale = document.getElementById('memeScale').value;
     const prosCons = document.getElementById('prosCons').value;
     const profession = document.getElementById('profession').value;
+    const socialScale = document.getElementById('socialScale').value;
     let apps = document.getElementById("apps").selectedOptions;
     let appsArr = [];
 
@@ -24,6 +25,7 @@ submitForm = ()=> {
             email:email,
             profession:profession,
             ageGroup:age,
+            socialScale:socialScale,
             apps:appsArr,
             prosAndCons:prosCons,
             memeScale:memeScale
@@ -51,6 +53,12 @@ async function SaveResponse(payload) {
         }, 2500);
     }
 }
+
+function displayMemescale(Scalevalue){
+    const valueSpan = document.getElementById('memeScaleValue');
+    valueSpan.innerHTML= `${Scalevalue}%`;
+}
+
 
 const custom_alert = (type, message) =>{
     let newAlert = $("#message");

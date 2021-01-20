@@ -76,7 +76,7 @@ body {
   color: #3A6073;
 }
 
-.formDescription p{
+.formDescription p,.alert{
  font-size: 75%;
 }
 

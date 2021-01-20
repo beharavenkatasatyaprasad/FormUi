@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEXONIQ</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -88,9 +89,22 @@
                             class="form-control" rows="4.5" name="prosCons" id="prosCons"></textarea>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="memeScale">How often do you follow memes?</label>
-                    <input type="range" class="form-control-range" id="memeScale">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <span class="float-right px-1" id="memeScaleValue"></span>
+                        <label for="memeScale">How often do you follow memes?<span class="aterisk">*</span></label>
+                        <input type="range" class="form-control-range" id="memeScale" value="0" onchange="displayMemescale(this.value)">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 form-group">
+                        <label for="socialScale">Average time You spend on Social media per Day?<span class="aterisk">*</span></label>
+                        <select class="custom-select" id="socialScale" name="socialScale">
+                            <option value="">--Please Select--</option>
+                            <option value="Less than 1 Hour">Less than 1 Hour</option>
+                            <option value="1hour to 2 Hours">1hour to 2 Hours</option>
+                            <option value="2hours to 5 Hours">2hours to 5 Hours</option>
+                            <option value="More than 5 Hours">More than 5 Hours</option>
+                        </select>
+                    </div>
                 </div>
                 <button type="button" id="submitBtn" onclick="submitForm()" class="btn m-0 submit-btn btn-block">
                     Submit
