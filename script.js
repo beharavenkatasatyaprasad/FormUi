@@ -2,6 +2,7 @@ const submitBtn = document.getElementById('submitBtn');
 const form= document.getElementById('Form');
 
 submitForm = ()=> {
+    submitBtn.innerHTML=`Loading...`;
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const age = document.getElementById('age').value;
@@ -50,6 +51,7 @@ async function SaveResponse(payload) {
         custom_alert('success', 'Thanks for your Response..');
         setTimeout(() => {
             form.reset()
+        submitBtn.innerHTML=`Submit`;
         }, 2500);
     }
 }
