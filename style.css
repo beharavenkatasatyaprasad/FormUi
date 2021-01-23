@@ -101,6 +101,12 @@ body {
   color:#3A6073 ;
 }
 
+.validation{
+  font-size:68%;
+  color: hsl(0, 100%, 50%);
+  letter-spacing:1.5px;
+}
+
 html{
   scroll-behavior: smooth;
 }

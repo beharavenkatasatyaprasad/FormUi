@@ -17,8 +17,7 @@
         <a class="navbar-brand m-0" href="index.html"><img src="stack/logo.jpeg" height="40" alt=""></a>
     </nav>
     <div class="container-fluid">
-
-        <div class="container bg-light shadow card " style="margin-top: 1rem;">
+        <div class="container bg-light shadow card fade fade-in" id="formCard" style="margin-top: 1rem;">
             <div class="formHeader">
                 <h2 class="text-center">Research Form</h2>
             </div>
@@ -27,7 +26,8 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, omnis officiis atque iure autem
                     obcaecati dolor? Obcaecati deserunt fugit consectetur, esse sunt autem necessitatibus eaque tenetur
                     voluptas cumque itaque nemo!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis placeat dicta eligendi similique
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis placeat dicta eligendi
+                    similique
                     repellat doloremque deserunt in harum possimus tenetur quo fugiat voluptatum ducimus mollitia maxime
                     fugit, quam labore omnis.
                 </p>
@@ -41,7 +41,8 @@
             margin: 0px;
           " />
             <form id="Form" autocomplete="off">
-                <div class="text-right" style="opacity: 0.8; font-size: x-small; color: rgb(27, 88, 145); letter-spacing: 1px;">
+                <div class="text-right"
+                    style="opacity: 0.8; font-size: x-small; color: rgb(27, 88, 145); letter-spacing: 1px;">
                     Fields marked with <span class="aterisk">*</span> are mandatory.
                 </div>
                 <div class="p-1">
@@ -49,20 +50,24 @@
                         <div class="col-sm-12 col-md-12 col-lg-6 form-group">
                             <label for="name">Name<span class="aterisk">*</span></label>
                             <input type="text" class="form-control" name="name" id="name" />
+                            <p id="NameVal" class="validation text-center"></p>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6 form-group">
                             <label for="email">Email<span class="aterisk">*</span></label>
                             <input type="email" class="form-control" name="email" id="email" />
+                            <p id="EmailVal" class="validation text-center"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-6 form-group">
                             <label for="profession">Profession<span class="aterisk">*</span></label>
-                            <input type="text" class="form-control" name="profession" id="profession"/>
+                            <input type="text" class="form-control" name="profession" id="profession" />
+                            <p id="ProfessionVal" class="validation text-center"></p>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6 form-group">
                             <label for="age">Age<span class="aterisk">*</span></label>
-                            <input type="text" class="form-control" name="age" id="age"/>
+                            <input type="text" class="form-control" name="age" id="age" />
+                            <p id="AgeVal" class="validation text-center"></p>
                         </div>
                     </div>
                     <div class="row">
@@ -83,22 +88,26 @@
                                 <option value="Signal">Signal</option>
                                 <option value="WeChat">WeChat</option>
                             </select>
+                            <p id="AppsVal" class="validation text-center"></p>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6 form-group">
                             <label for="prosCons">Pros and Cons bla bla<span class="aterisk">*</span></label>
-                            <textarea type="text"
-                                placeholder="include hyphen (-) between each point."
+                            <textarea type="text" placeholder="include hyphen (-) between each point."
                                 class="form-control" rows="4.5" name="prosCons" id="prosCons"></textarea>
+                            <p id="ProsConsVal" class="validation text-center"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-6 form-group">
                             <span class="float-right px-1" id="memeScaleValue"></span>
                             <label for="memeScale">How often do you follow memes?<span class="aterisk">*</span></label>
-                            <input type="range" class="form-control-range" id="memeScale" value="0" onchange="displayMemescale(this.value)">
+                            <input type="range" class="form-control-range" id="memeScale" value="0"
+                                onchange="displayMemescale(this.value)">
+                            <p id="MemeScaleVal" class="validation text-center"></p>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6 form-group">
-                            <label for="socialScale">Average time You spend on Social media per Day?<span class="aterisk">*</span></label>
+                            <label for="socialScale">Average time You spend on Social media per Day?<span
+                                    class="aterisk">*</span></label>
                             <select class="custom-select" id="socialScale" name="socialScale">
                                 <option value="">--Please Select--</option>
                                 <option value="Less than 1 Hour">Less than 1 Hour</option>
@@ -106,6 +115,7 @@
                                 <option value="2hours to 5 Hours">2hours to 5 Hours</option>
                                 <option value="More than 5 Hours">More than 5 Hours</option>
                             </select>
+                            <p id="SocialScaleVal" class="validation text-center"></p>
                         </div>
                     </div>
                     <button type="button" id="submitBtn" onclick="submitForm()" class="btn m-0 submit-btn btn-block">
@@ -114,6 +124,25 @@
             </form>
         </div>
     </div>
+    <div class="container t col-sm-8 p-0" id="successfulSubmission" style=" margin-top:6rem;">
+        <div class="card bg-light shadow fade fade-in">
+            <div class="row">
+                <div class="col-sm-10 pt-1 mt-3 mb-2 text-center col-md-6 col-lg-6 side-content">
+                    <h3 style="padding: 10% 10% 5% 10%;">
+                        <br />
+                        Response successfully submitted..
+                    </h3>
+                    <button class="btn mx-1 btn-sm m-2 btn-info" onclick="redirectToForm()">
+                        <i class="fa fa-arrow-left"></i> Submit another response
+                    </button>
+                </div>
+                <div class="col-sm-12 my-2 col-md-6 col-lg-6 side-content-img">
+                    <img src="stack/done.svg" height="250" class="img-responsive" alt="Ima" />
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="particles-js" height="100"></div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
